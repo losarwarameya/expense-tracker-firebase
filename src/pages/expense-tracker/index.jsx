@@ -13,7 +13,7 @@ export const ExprenseTracker = () => {
   const navigate = useNavigate();
 
   const [description,setDescription] = useState('');
-  const [transactionAmount,setTransactionAmount] = useState(0);
+  const [transactionAmount,setTransactionAmount] = useState('');
   const [transactionType,setTransactionType] = useState('expense');
 
   const {balance,income,expenses} = transactionTotal;
@@ -37,7 +37,7 @@ export const ExprenseTracker = () => {
   };
 
   return (
-    <>
+    <div className='expense-tracker-container'>
     <div className="expense-tracker">
       <div className="container">
         <h1>{userName}'s Expense Tracker</h1>
@@ -70,7 +70,7 @@ export const ExprenseTracker = () => {
       </div>
       {
         userPhoto && 
-        <div>
+        <div className='user-desc'>
           <img src={userPhoto} alt={userName} />
           <button onClick={signUserOut}>Sign Out</button>
         </div>
@@ -92,6 +92,6 @@ export const ExprenseTracker = () => {
         }
       </ul>
     </div>
-    </>
+    </div>
   )
 }

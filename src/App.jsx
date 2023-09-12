@@ -3,6 +3,8 @@ import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
 import {Auth} from './pages/auth/index'
 import {ExprenseTracker} from './pages/expense-tracker/index'
 
+import './App.css'
+
 const App = () => {
   return (
     <div>

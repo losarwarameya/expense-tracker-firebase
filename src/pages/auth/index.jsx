@@ -24,9 +24,9 @@ export const Auth = () => {
   }
 
   return (
-    <div>
-      <p>Sign in with Google to continue.</p>
-      <button onClick={signInWithGoogle}>Sign in with Google</button>
+    <div className='sign-in-container'>
+      <p className='sign-in-heading'>Sign in with Google to continue.</p>
+      <button className='sign-in-btn' onClick={signInWithGoogle}>Sign in with Google</button>
     </div>
   )
 };
